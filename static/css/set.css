@@ -1,0 +1,449 @@
+@font-face {
+  font-family: 'songti';
+  src: url('../../this/songti.ttf');
+}
+table {
+        table-layout: auto;
+        font-family: '微软雅黑';
+        font-size: 20px;
+}
+
+body,html{
+ background: #000;
+ margin:0;
+ padding: 0;
+ height: 100%;
+ font-family: '微软雅黑' ;
+ font-weight: bold;
+}
+
+.wrapper{
+   width: 1560px;
+   height: 100%;
+   margin:0 auto;
+}
+   /* 
+    顶部导航
+    */
+.top-nav{
+    height: 82px;
+    line-height: 82px;
+}
+.top-nav ul{
+    height: 82px;
+    margin:0;
+    padding: 0;
+    padding-right: 58px; 
+}
+.top-nav li{
+    list-style: none;
+    width:71px; 
+    float: right;
+}
+.top-nav li a{
+    color: #f9b93b;
+}
+.top-nav li a:hover{
+    color: #fff;
+    text-decoration:none; 
+}
+
+
+/* 
+ 底部内容
+
+ */
+
+.bottom-content{
+  position: relative;
+  height: 100%;
+}
+
+
+/* 
+
+左侧边栏
+ */
+
+.left-sider{
+    width: 220px;
+    margin:44px  16px 0 0;
+    height: 100%;
+    float: left;  
+}
+
+.left-sider ul{
+  width: 220px;
+  margin: 0; 
+  padding: 0;
+
+}
+
+.list-item-menu.open{
+  background: #f9b93b;
+  opacity: 1;
+}
+.list-item-menu.open a span{
+    background: #f9b93b;
+    color: #000;
+    opacity: 1;
+}
+.list-item-menu{
+  list-style: none;
+  height: 46px;
+  padding-left: 92px; 
+  line-height: 46px;
+}
+
+.list-item-menu a span{
+  color: #f9b930;
+  font-size: 20px;
+  opacity: 0.3;  
+}
+
+.list-item-menu a:hover{
+  text-decoration:none; 
+  cursor: pointer;
+}
+/* 
+此处后期设置为根据媒体查询
+
+ */
+.right-list-table{
+    float: right;
+    margin-right: 92px;
+    width: 1230px;
+}
+
+/* 
+功能按钮区域
+ */
+.top-btn-section{
+  height: 36px;
+  margin-bottom: 8px; 
+}
+
+.fun-btn{
+    float: left;
+    height: 100%;
+    background-color: #000;
+}
+
+.fun-btn button{
+    margin-right: 16px; 
+    color: #f9b93b;
+    font-size: 18px;
+    background: #000;
+    border:1px solid #f9b93b;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.fun-btn button:hover,.fun-btn button:focus{
+    color: #000;
+    background: #f9b93b;
+    outline: none;
+    border-color: #f9b93b;
+    opacity: 1;
+}
+
+.fun-btn button:last-child{
+    margin-right: 0; 
+}
+
+/* 
+搜索框
+ */
+.search-div{
+    float: left;
+}
+
+/* 
+表格
+ */
+
+.container{
+    margin: 0;
+    padding:0;
+    background: #000;
+    height: 100%;
+}
+@media (max-width: 1920px){
+.container{
+    width: 1590px;
+ }
+ .top-nav{
+    width: 1920px;
+ }
+ .wrapper{
+    width:1912px;
+ }
+ .right-list-table{
+    width:1584px;
+ }
+}
+@media (max-width: 1800px){
+.container{
+    width: 1462px;
+ }
+ .top-nav{
+    width: 1800px;
+ }
+ .wrapper{
+    width:1888px;
+ }
+ .right-list-table{
+    width:1462px;
+ }
+}
+@media (max-width: 1568px){
+.container{
+    width: 1230px;
+ }
+ .top-nav{
+    width: 1568px;
+ }
+ .wrapper{
+    width:1560px;
+ }
+ .right-list-table{
+    width:1230px;
+ }
+}
+@media (max-width: 1440px){
+.container{
+    width: 1110px;
+ }
+ .top-nav{
+    width: 1440px;
+ }
+ .wrapper{
+    width:1432px;
+ }
+ .right-list-table{
+    width:1102px;
+ }
+}
+@media (max-width: 1280px){
+.container{
+    width: 950px;
+ }
+ .top-nav{
+    width: 1280px;
+ }
+ .wrapper{
+    width:1272px;
+ }
+ .right-list-table{
+    width:942px;
+ }
+}
+@media (max-width: 1080px){
+.container{
+    width: 750px;
+ }
+ .top-nav{
+    width: 1080px;
+ }
+ .wrapper{
+    width:1072px;
+ }
+ .right-list-table{
+    width:742px;
+ }
+}
+table thead {
+    background-color: #000;
+    color: #f9b93b;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    overflow-x: auto;
+    border: 1px solid rgb(60, 42, 14) !important;
+
+}
+table{
+    color: #fff;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    background-color: #000;
+    font-weight: normal;
+}
+td {
+    border: 1px solid rgb(60, 42, 14) !important;
+    min-width: 40px;
+    min-height: 32px;
+}
+
+th {
+    border: 1px solid rgb(60, 42, 14) !important;
+    min-width: 40px;
+    max-height: 40px;
+}
+table tbody tr:hover{
+    background: #000;
+}
+
+
+table tbody tr td:first-child{
+    border-left: none;
+}
+.fixed-table-container{
+  border: 1px solid rgb(60, 42, 14);
+  overflow-x: auto;
+}
+.fixed-table-header{
+  position: fixed;
+}
+.fixed-table-body{
+    margin-top: 42px;
+}
+
+#backup_table tbody tr td{
+    padding:18px;
+}
+/* 
+选中状态
+ */
+.fixed-table-container tbody .selected td {
+    background-color: #000;
+}
+/* 
+鼠标经过状态
+ */
+.table-hover > tbody > tr:hover {
+  background-color: #000;
+}
+/*
+默认状态
+ */
+table input[type='checkbox']{
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    zoom: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background: #3c2a0e;
+}
+/* 
+选中的时候
+ */
+table input[type='checkbox']:checked{
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    zoom: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background: #f9b93b;
+}
+/*
+获取焦点的时候
+ */
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: none;
+  outline-offset: -2px;
+}
+
+/* 
+隐藏滚动条但是仍然可以滚动 */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* 
+
+模态框按钮样式
+ */
+
+.spe{
+    background-color: #f9b93b;
+    border: 1px solid #f9b93b;
+    color: #fff;
+    width: 100%;
+}
+.spe:hover,.spe:active,.spe:focus{
+    background-color: #f9b93b;
+    border: 1px solid #f9b93b;
+}
+
+.exit{
+  background-color: #a7a7a7;
+  border: 1px #a7a7a7 solid;
+}
+.delete{
+   background-color: #f9b93b;
+   border: 1px #f9b93b solid;
+}
+.delete:hover,.delete:active,.delete:focus{
+   background-color: #f9b93b;
+   border: 1px #f9b93b solid;
+}
+.modal-body input:focus{
+    border: 1px solid #f9b93b;
+}
+.modal-header{
+    text-align:center; 
+    padding: 12px 16px;
+}
+.modal-headerSmall{
+  border-bottom: none;
+}
+.modal-body {
+    padding: 24px;
+}
+.modal-bodySmall{
+    padding: 6px 16px 0;
+} 
+.modal-bodySmall h3{
+    margin-top: 0;
+    margin-bottom: 0;  
+}
+.modal-body form div:last-child{
+    margin-bottom: 0px;
+}
+.modal-footer{
+    padding: 20.5px 24px;
+} 
+.modal-footerSmall{
+    border-top: none;
+    padding: 16px;
+}
+.modal-footerSmall  button{
+   width: 88px;
+}
+
+
+.modalSmall{
+  width: 400px;
+}
+.modalXSmall{
+  width: 222px;
+  margin: 124px auto 124px 290px;
+}
+.col-lg-3{
+    padding-left: 0;
+    padding-right: 14px; 
+}
+.col-lg-8{
+    padding-left:0;
+    padding-right: 0px; 
+    width: 70%;
+}
+.modal.form-group{
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+
+label.col-lg-3.col-xs-2.col-md-3.col-form-label {
+    text-align: center;
+}
